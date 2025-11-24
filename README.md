@@ -1,9 +1,7 @@
-# HRE :: Hybrid (Clustered Forward/Deferred) Rendering Engine 
+# HeliosCluster - Real Time Clustered Rendering Engine
 
-[![GitHub license](https://img.shields.io/github/license/Angelo1211/HybridRenderingEngine.svg)](https://github.com/Angelo1211/HybridRenderingEngine/blob/master/LICENSE)
-[![GitHub issues](https://img.shields.io/github/issues/Angelo1211/HybridRenderingEngine.svg)](https://github.com/Angelo1211/HybridRenderingEngine/issues)
 
-HRE was a real-time, Physically based, Clustered renderer built with OpenGL and based on the techniques described on the paper [Clustered Deferred and Forward shading](http://www.cse.chalmers.se/~uffe/clustered_shading_preprint.pdf) by Ola Olsson, Markus Billeter and Ulf Assarsson. The aim of this project is to build a testing framework to showcase deferred and forward graphics techniques (hence the hybrid part) and to examine the strengths of Clustered shading. I wrote a lengthy blog post full of cool animations that can serve as an introduction to efficient rendering algorithms as well as a detailed guide of my implementation of Clustered Shading, so make sure to check it out [here!](http://www.aortiz.me/2018/12/21/CG.html)
+HC is a real-time, Physically based, Clustered renderer built with OpenGL and based on the techniques described on the paper [Clustered Deferred and Forward shading](http://www.cse.chalmers.se/~uffe/clustered_shading_preprint.pdf) by Ola Olsson, Markus Billeter and Ulf Assarsson. The aim of this project is to build a testing framework to showcase deferred and forward graphics techniques (hence the hybrid part) and to examine the strengths of Clustered shading. I wrote a lengthy blog post full of cool animations that can serve as an introduction to efficient rendering algorithms as well as a detailed guide of my implementation of Clustered Shading, so make sure to check it out [here!](http://www.aortiz.me/2018/12/21/CG.html)
 
 This algorithm was selected for its two major benefits over traditional deferred/tiled solutions: it allows for more freedom to choose forward or deferred shading paths as desired and is a better long term fit for the modern GPU performance trends. It has already been succesfully implemented in some of the best looking games of the last couple of years, with some notable examples being: [DOOM 2016](https://www.slideshare.net/TiagoAlexSousa/siggraph2016-the-devil-is-in-the-details-idtech-666), [Just Cause 3](http://www.humus.name/Articles/PracticalClusteredShading.pdf) and [Detroit: Become Human](https://www.gdcvault.com/play/1025420/Cluster-Forward-Rendering-and-Anti). 
 
@@ -154,48 +152,5 @@ There's a comprehensive indexed list of references for the project that I keep m
 * [Real Shading in Unreal Engine 4](https://blog.selfshadow.com/publications/s2013-shading-course/karis/s2013_pbs_epic_notes_v2.pdf): The principles and implementation details behind UE4 physically based shading model. Includes shader code!
 * [Forward vs Deferred vs Forward+ Rendering with DirectX 11](https://www.3dgep.com/forward-plus/): Detailed overview of different rendering algorithms.
 
-## Acknowledgements
-### Models & Textures
-
-* [Sponza (gLTF2 Version)](https://github.com/KhronosGroup/glTF-Sample-Models/tree/master/2.0/Sponza)
-: Original model: [Frank Meinl](https://www.artstation.com/artwork/K5bEr), First modified by: [Morgan McGuire](http://casual-effects.com/data/index.html), PBR Textures: [Alexandre-pestana](http://www.alexandre-pestana.com/pbr-textures-sponza/).
-* [Barcelona Sunrise (HDR Map)](http://www.hdrlabs.com/sibl/archive.html): by [@Blochi](https://twitter.com/Blochi)
-* [Battle Damaged Sci-fi Helmet (PBR)](https://github.com/KhronosGroup/glTF-Sample-Models/tree/master/2.0/DamagedHelmet): by [@theblueturtle_](https://sketchfab.com/theblueturtle_)
-* [Metal Rough Test Spheres (PBR)](https://github.com/KhronosGroup/glTF-Sample-Models/tree/master/2.0/MetalRoughSpheres): by Ed Mackey.
-* [gLTF Sample Model Repository](https://github.com/KhronosGroup/glTF-Sample-Models): All other models & textures.
-* [sIBL Archive](http://www.hdrlabs.com/sibl/archive.html): All other HDR maps & skyboxes.
-* [Default Skybox](http://www.custommapmakers.org/skyboxes.php)
-
-Thank you to all the 3D & texture artists who have made their assets free to use and so beautiful to look at. If it weren't for you guys I'd probably still be staring at the same old boring utah teapot all damn day!  
-
-If I've mis-acknowledged, misattributed, or missed any references, please, create a new GitHub issue or send me a DM on Twitter and I'll make sure to fix it immediately.
-
-### Graphics Programming Community <3
-
-Shout-out to Kostas Anagnostou and Eric Arnebäck for taking the time to answer all of my questions for the last couple of months, your explanations made understanding every daunting topic so much easier!
-
-## License
-
-MIT License
-
-Copyright (c) 2018 Angel Ortiz
-
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
-
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
 
 
